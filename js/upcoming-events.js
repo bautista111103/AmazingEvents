@@ -93,7 +93,7 @@ function displaycardsevents(parametro){
                 </div>
                 <div class="parte-inferior-card">
                     <p>Price:$${parametro[i].price}</p>
-                    <a href="./description-of-images.html?id=${parametro[i].id}" class="ver-mas">See more</a>
+                    <a href="../description-of-images.html?id=${parametro[i].id}" class="ver-mas">See more</a>
                 </div>
              </div>
              `}
