@@ -4,7 +4,7 @@ var checkboxSelected = [];
 var cartas = [];
 
 async function datosApi(){
-    await fetch("http://amazing-events.herokuapp.com/api/events")
+    await fetch("https://amazing-events.herokuapp.com/api/events")
     .then(response=>response.json())
     .then(json=>cartas=json)
     console.log(cartas.events)
