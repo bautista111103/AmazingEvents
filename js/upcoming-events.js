@@ -76,8 +76,7 @@ function filtradocombinado(){
     
     displaycardsevents(datos)
     }
-
-
+    datosApi()
 function displaycardsevents(parametro){
     var templateHtml = ""; 
     if(parametro.length !== 0){

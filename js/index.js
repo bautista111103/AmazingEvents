@@ -4,7 +4,7 @@ var checkboxSelected = [];
 var cartas = [];
 
 async function datosApi(){
-    await fetch("https://amazing-events.herokuapp.com/api/events")
+    await fetch("http://amazing-events.herokuapp.com/api/events")
     .then(response=>response.json())
     .then(json=>cartas=json)
     console.log(cartas.events)
@@ -28,8 +28,7 @@ async function datosApi(){
     }))
     filtradocombinado()
 }
-         datosApi()
-
+datosApi()
   function imprimircheckbox(){ 
   var guardarcategorias = "";
   var categoriascheck = cartas.events.map(evento => evento.category);

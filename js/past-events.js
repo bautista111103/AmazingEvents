@@ -28,8 +28,7 @@ async function datosApi(){
     }))
     filtradocombinado()
 }
-         datosApi()
-  
+datosApi()
   function imprimircheckbox(){ 
   var guardarcategorias = "";
   var categoriascheck = cartas.events.map(evento => evento.category);
