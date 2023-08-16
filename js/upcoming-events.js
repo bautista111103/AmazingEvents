@@ -4,7 +4,7 @@ var fechaActual = "2022-01-01";
 var checkboxSelected = [];
 
 async function datosApi(){
-    await fetch("https://amazing-events.herokuapp.com/api/events")
+    await fetch("https://mindhub-xj03.onrender.com/api/amazing")
     .then(response=>response.json())
     .then(json=>cartas=json)
     console.log(cartas.events)

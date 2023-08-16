@@ -2,18 +2,18 @@ var cartas = [];
 let templateHtml = "";
 
 async function datosApi(){
-    await fetch("https://amazing-events.herokuapp.com/api/events")
+    await fetch("https://mindhub-xj03.onrender.com/api/amazing")
     .then(response=>response.json())
     .then(json=>cartas=json)
 
-    var idEvento = 1;
+    var idEvento = 0;
     cartas.events.map(evento =>evento.id = idEvento++)
     var id = location.search.split("?id=").filter(Number)
     // console.log(location)
     // console.log(location.search)
     // console.log(id)
     var selectedId = Number(id[0])
-    // console.log(selectedId)
+     console.log(selectedId)
     var event =cartas.events.find((event) =>{
         return event.id == selectedId
     })
